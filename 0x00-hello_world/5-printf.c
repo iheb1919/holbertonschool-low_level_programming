@@ -1,17 +1,11 @@
 #include <stdio.h>
-
 /**
- *
- * Return printf line
- */
+* main - Entry point
+* print message
+* Return: Qlzays 0 (Success)
+*/
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
-    #include <stdio.h>
-    int main()
-    {
-      
-       printf("with proper grammar, but the outcome is a piece of art");
-       return 0;
-    }
+printf("with proper grammar, but the outcome is a piece of art,\n");
+ return (0);
+}

@@ -1,7 +1,13 @@
-    #include <stdio.h>
-    #include <string.h>
-    int main()
-    {
-       puts("Programming is like building a multilingual");
-       return(0);
-    }
+
+#include <stdio.h>
+
+/**
+ * 
+ *
+ * Return the puts line
+ */
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}

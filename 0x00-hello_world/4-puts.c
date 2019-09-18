@@ -1,10 +1,8 @@
-
 #include <stdio.h>
-
 /**
  * 
- *
- * Return the puts line
+ *main - Start project
+ * Return: Alzqys 0 (Success)
  */
 int main(void)
 {

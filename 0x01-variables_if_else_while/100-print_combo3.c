@@ -1,31 +1,25 @@
 #include <stdio.h>
-
-
 /**
- * main - Entry point
- *
+ * main - 100
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int tens, ones;
-
-	for (tens = '0'; tens <= '8'; tens++)
-	{
-		ones = tens + 1;
-		while (ones <= '9')
-		{
-			putchar(tens);
-			putchar(ones++);
-
-			if (tens != '8')
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+int i;
+int j;
+for (i = 48; i <= 57; i++)
+for (j = 48; j <= 57; j++)
+if (i < j)
+{
+putchar(i);
+putchar(j);
+if (i != 56 || j != 57)
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+return (0);
 }

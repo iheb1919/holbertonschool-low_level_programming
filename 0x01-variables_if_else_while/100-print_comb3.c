@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - 100
- * ksjdhfjhdsfjh sdf 
+ * iheb iheb  
  * Return: Always 0 (Success)
  */
 int main(void)

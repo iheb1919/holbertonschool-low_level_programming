@@ -1,5 +1,7 @@
+
 #include <stdio.h>
-#include <stdlib.h>
+
+
 /**
  * main - Entry point
  *
@@ -7,12 +9,11 @@
  */
 int main(void)
 {
-char n;
-n = '0';
-while (n <= '9')
-{
-putchar(n);
-putchar("\n");
-n++;
-}
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+		putchar(i);
+	putchar('\n');
+
+	return (0);
 }

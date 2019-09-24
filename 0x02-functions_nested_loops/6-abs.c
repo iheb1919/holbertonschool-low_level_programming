@@ -2,7 +2,7 @@
 /**
  * _abs - returns absolute value of input integer
  *
- * @n: input integer
+ * @c: input integer
  *
  * Return: Always positive int
  */

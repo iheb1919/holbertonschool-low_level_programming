@@ -7,7 +7,8 @@
 void print_alphabet(void)
 {
 char *a = "abcdefjhijklmnopqrstuvwxyz\n";
-while(*a){
+while (*a)
+{
 _putchar(*a);
 a++;
 }

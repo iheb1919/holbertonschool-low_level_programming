@@ -11,16 +11,16 @@ int main(void)
 {
 	int n;
 
-	float i, j, tmp;
+	long i, j, tmp;
 
 	i = 1;
 	j = 2;
 
-	printf("%.0f", i);
+	printf("%lu", i);
 
 	for (n = 0; n < 97; n++)
 	{
-		printf(", %.0f", j);
+		printf(", %lu", j);
 		tmp = i;
 		i = j;
 		j += tmp;

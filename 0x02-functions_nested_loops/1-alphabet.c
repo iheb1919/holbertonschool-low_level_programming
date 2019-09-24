@@ -1,4 +1,6 @@
 #include "holberton.h"
+
+
 /**
  * print_alphabet - prints lowercase alphabet, then newline
  *
@@ -6,10 +8,10 @@
  */
 void print_alphabet(void)
 {
-int i;
-char a[] = "abcdefjhijklmnopqrstuvwxyz\n";
-for (i = 0; i < 27 ; i++)
+char *a = "abcdefghijklmnopqrstuvwxyz\n";
+while (*a)
 {
-_putchar(a[i]);
+_putchar(*a);
+a++;
 }
 }

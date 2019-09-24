@@ -6,13 +6,15 @@
  */
 void print_alphabet_x10(void)
 {
-int i, j;
-char a[] = "abcdefjhijklmnopqrstuvwxyz\n";
-for (j = 0; j < 10; j++)
+int i = 10;
+while (i)
 {
-for (i = 0; i < 27 ; i++)
+char *az = "abcdefghijklmnopqrstuvwxyz\n";
+while (*a)
 {
-_putchar(a[i]);
+_putchar(*a);
+a++;
 }
+i--;
 }
 }

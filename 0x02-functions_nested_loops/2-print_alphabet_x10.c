@@ -7,7 +7,7 @@
 void print_alphabet_x10(void)
 {
 int i = 10;
-while (i)
+while (i != 0)
 {
 char *az = "abcdefghijklmnopqrstuvwxyz\n";
 while (*a)

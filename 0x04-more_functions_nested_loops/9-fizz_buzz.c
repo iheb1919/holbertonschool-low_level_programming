@@ -1,10 +1,11 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * fizz_buzz - dont print 3 or 5 multiple
  *
  * Return: 1
  */
-void fizz_buzz(void)
+int main(void)
 {
 int i, j;
 {
@@ -29,4 +30,5 @@ printf(" %d ", i);
 }
 printf('\n');
 }
+return (0);
 }

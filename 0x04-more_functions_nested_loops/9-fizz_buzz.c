@@ -1,34 +1,30 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include<stdio.h>
 /**
- * fizz_buzz - dont print 3 or 5 multiple
+ * main - Entry point
  *
- * Return: 1
+ * Return: no return
  */
 int main(void)
 {
-int i, j;
-{
+int i;
 for (i = 1; i <= 100; i++)
 {
-if ((i % 3) == 0 && (i % 5) == 0)
+if (i % 3 == 0)
 {
-printf(" FizzBuzz ");
+printf("Fizz");
 }
-else if ((i % 3) == 0)
+if (i % 5 == 0)
 {
-printf(" Fizz");
+printf("Buzz");
 }
-else if ((i % 5) == 0)
+if (i % 3 != 0 && i % 5 != 0)
 {
-printf(" Buzz ");
+printf("%d", i);
 }
-else
-{
-printf(" %d ", i);
+if (i != 100)
+printf(" ");
 }
-}
-printf('\n');
-}
+putchar('\n');
 return (0);
 }

@@ -4,6 +4,7 @@
  *
  * @dest: input of function
  * @src: input of function
+ * Return: dest Always Success
  */
 char *_strcpy(char *dest, char *src)
 {

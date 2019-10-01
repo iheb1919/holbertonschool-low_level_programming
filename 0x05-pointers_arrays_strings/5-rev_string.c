@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * rev_string - function that reverse a string
- *
  * @s: input if function
+ * Return: no return
  */
 void rev_string(char *s)
 {
@@ -13,7 +13,7 @@ while (*(s + l) != '\0')
 {
 l++;
 }
-for (i = 0 ,j = l - 1 ; i < j; i++, j--)
+for (i = 0, j = l - 1 ; i < j; i++, j--)
 {
 x = *(s + i);
 *(s + i) = *(s + j);

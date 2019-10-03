@@ -1,0 +1,20 @@
+#include "holberton.h"
+/**
+ * *_srtncat - function that concatinates two strings
+ * @dest: function input
+ * @src: function input
+ * @n: function input
+ * Return: Alwys 0 (Success)
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+int j = 0, i = 0;
+while (*(dest + i) != '\0')
+i++;
+for(j = 0; j < n; j++)
+{
+*(dest + i) = *(src + j);
+i++;
+}
+return (dest);
+}

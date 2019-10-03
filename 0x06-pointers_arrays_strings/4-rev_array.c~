@@ -1,0 +1,23 @@
+#include "holberton.h"
+/**
+ * reverse_array - function that reverse array
+ * @a: input function
+ * @n input function
+ * Return: Always success
+ */
+void reverse_array(int *a, int n)
+{
+int j, i;
+int l = 0;
+char x;
+while (*(a + l) != '\0')
+{
+l++;
+}
+for (i = 0, j = l - 1 ; i < j; i++, j--)
+{
+x = *(a + i);
+*(a + i) = *(a + j);
+*(a + j) = x;
+}
+}

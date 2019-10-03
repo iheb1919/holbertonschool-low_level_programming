@@ -1,0 +1,22 @@
+#include "holberton.h"
+/**
+ * leet - function thqt convert
+ * @s: input function
+ * Return: always 0
+ */
+char *leet(char *s)
+{
+int j;
+int i;
+char a1[] = {'a', 'A', 'E', 'e', 'o', 'O', 't', 'T', 'L', 'l'};
+char a2[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+for (j = 0; s[j] != '\0'; j++)
+{
+for (i = 0; i <= 9; i++)
+{
+if (s[j] == a1[i])
+s[j] = a2[i];
+}
+}
+return (s);
+}

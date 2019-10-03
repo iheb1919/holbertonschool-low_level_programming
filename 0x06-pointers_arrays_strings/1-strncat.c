@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * *_srtncat - function that concatinates two strings
- * @dest: function input
- * @src: function input
- * @n: function input
+ * @*dest: function input
+ * @*src: function input
+ * @*n: function input
  * Return: Alwys 0 (Success)
  */
 char *_strncat(char *dest, char *src, int n)

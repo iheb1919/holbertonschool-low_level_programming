@@ -4,7 +4,7 @@
  * @*dest: function input
  * @*src: function input
  * @*n: function input
- * Return: Alwys 0 (Success)
+ * Return: A pointer to result
  */
 char *_strncat(char *dest, char *src, int n)
 {

@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
  * string_toupper - function that change lower to upper
- * @s: function input
+ * @str: function input
  *
  * Return: always 0
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-int i;
-while (*(s + i))
+int index = 0;
+while (str[index])
 {
-if (*(s + i) >= 'a' && *(s + i) <= 'z')
-*(s + i) -= 32;
-i++;
+if (str[index] >= 'a' && str[index] <= 'z')
+str[index] -= 32;
+index++;
 }
-return (s);
+return (str);
 }

@@ -2,20 +2,36 @@
 /**
  * cap_string - function that capitlize
  *
- * @s: function input
+ * @str: function input
  * Return: Always return 0
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-int j = 0;
-while (s[j] != '\0')
-{
-if (s[j] == ' ' || s[j] == ';' || s[j] == '\n' || s[j] == '\t' || s[j] == ',' || s[j] == '.' || s[j] == '!' || s[j] == '?' || s[j] == '"' || s[j] == '(' || s[j] == ')' || s[j] == '{' || s[j] == '}')
-if (s[j + 1] >= 'a' && s[j + 1] <= 'z')
-s[j + 1] = s[j + 1] - 32;
-j++;
-}
-if (s[0] >= 'a' && s[0] <= 'z')
-s[0] = s[0] - 32;
-return (s);
+	int index = 0;
+
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
+	}
+
+	return (str);
 }

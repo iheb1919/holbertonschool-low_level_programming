@@ -11,7 +11,7 @@ if (!(n % i))
 return (0);
 if (i > n / 2)
 return (1);
-return (is_prime_aux(n, ++i));
+return (is_prime2(n, ++i));
 }
 
 /**

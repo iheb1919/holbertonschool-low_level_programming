@@ -11,7 +11,7 @@ if (sqr * sqr == n)
 return (sqr);
 if (sqr * sqr > n)
 return (-1);
-return (_sqrt_recursion_aux(n, ++sqr));
+return (_sqrt_recursion2(n, ++sqr));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number.

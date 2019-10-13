@@ -1,1 +1,2 @@
-readme static libraries
+just readme file 
+

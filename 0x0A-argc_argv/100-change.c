@@ -12,10 +12,8 @@ int money;
 int i;
 int count;
 int coins[5] = {25, 10, 5, 2, 1};
-
 count = 0;
 money = 0;
-
 if (argc == 2)
 {
 for (i = 0; i <= 4; i++)
@@ -27,7 +25,6 @@ count = atoi(argv[1]) % coins[i];
 break;
 }
 }
-
 for (i = 0; i <= 4; i++)
 {
 if (count >= coins[i])
@@ -37,7 +34,8 @@ count = count - coins[i];
 i = 0;
 }
 }
-} else
+}
+else
 {
 printf("Error\n");
 return (1);

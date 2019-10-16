@@ -13,8 +13,8 @@ unsigned int i;
 char *tab;
 if (size < 1)
 return (NULL);
-a = malloc(size);
-if (a)
+tab = malloc(size);
+if (tab)
 for (i = 0; i < size; i++)
 tab[i] = c;
 return (tab);

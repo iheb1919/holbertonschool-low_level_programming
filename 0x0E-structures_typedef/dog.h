@@ -1,10 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-*struct dog - Initialize struct dog
-*@name:name type char
-*@age: age type float
-*@owner: name of owner tyme char
+ *struct dog - Initialize struct dog
+ *@name:name type char
+ *@age: age type float
+ *@owner: name of owner tyme char
+ *
 */
 typedef struct dog
 {

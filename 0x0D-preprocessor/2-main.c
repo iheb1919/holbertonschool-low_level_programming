@@ -3,8 +3,8 @@
  * main - prints the name of the file it was compiled from, followed by \n
  * Return: 0 on SUCCESS
  */
-int main()
+int main(void)
 {
-puts(__FILE__);
+printf("%s\n", __FILE__);
 return (0);
 }

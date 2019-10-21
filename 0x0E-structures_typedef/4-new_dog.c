@@ -1,0 +1,54 @@
+#include "dog.h"
+#include <stdlib.h>
+char *copy(char *str);
+/**
+ * new_dog - initializes a new struct dog
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * Return: pointer
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+dog_t *ret;
+ret = malloc(sizeof(dog_t));
+if (ret)
+{
+ret->name = copy(name);
+if (!(ret->name))
+{
+free(ret);
+return (NULL);
+}
+ret->owner = copy(owner);
+if (!(ret->owner))
+{
+free(ret->owner);
+free(ret);
+return (NULL);
+}
+ret->age = age;
+}
+return (ret);
+}
+
+/**
+ * copy - return copy
+ * @str: pointer to string
+ * Return: point.
+ */
+char *copy(char *str)
+{
+int len = 0;
+char *ret = NULL;
+if (str)
+{
+while (str[len])
+len++;
+ret = malloc(sizeof(char) * (len + 1));
+if (ret)
+for ( ; len >= 0; len--)
+ret[len] = str[len];
+}
+return (ret);
+}

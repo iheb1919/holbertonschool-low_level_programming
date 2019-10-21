@@ -23,7 +23,7 @@ return (NULL);
 ret->owner = copy(owner);
 if (!(ret->owner))
 {
-free(ret->owner);
+free(ret->name);
 free(ret);
 return (NULL);
 }

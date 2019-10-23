@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * get_op_func - function that selects the correct function to perform the operation asked by the user
+ * get_op_func - function that selects the correct function
  * @s: input functio
  * Return: Success
  */
@@ -25,5 +25,5 @@ if (!strcmp(ops[i].op, s))
 return (ops[i].f);
 i++;
 }
-return (0);
+return (NULL);
 }

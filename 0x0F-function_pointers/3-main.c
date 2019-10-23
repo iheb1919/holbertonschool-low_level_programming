@@ -14,8 +14,7 @@ int a, b;
 char op;
 if (argc != 4)
 {
-puts("Error");
-exit(98);
+return (NULL);
 }
 op = argv[2][0];
 a = atoi(argv[1]);

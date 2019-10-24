@@ -1,32 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - main function
- * @argc: inpot function
- * @argv: input function
- * Return: success
+ * main - prints opcodes for main
+ * @argc: intput
+ * @argv: input
+ * Return: 0 success
  */
 int main(int argc, char **argv)
 {
-int i, b;
-char *byte;
+int i, bytes;
+char *byte_ptr;
 if (argc != 2)
 {
 printf("Error\n");
-exit(1);
+return(1);
 }
-b = atoi(argv[1]);
-if (b < 0)
+bytes = atoi(argv[1]);
+if (bytes < 0)
 {
 printf("Error\n");
-exit(2);
+return(2);
 }
-byte = (char *)main;
-for (i = 0; i < b; i++)
+byte_ptr = (char *)main;
+for (i = 0; i < bytes; i++)
 {
-printf("%02hhx ", byte[i]);
-if (i < b - 1)
-printf(" ");
+printf("%02hhx", byte_ptr[i]);
+if (i < bytes - 1)
+putchar(' ');
 }
 printf("\n");
 return (0);

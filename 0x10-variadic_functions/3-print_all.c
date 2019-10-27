@@ -12,7 +12,7 @@ va_list args;
 char *str;
 unsigned int i = 0;
 va_start(args, format);
-while (format[i])
+while (format[i] && format)
 {
 switch (format[i])
 {
@@ -32,8 +32,8 @@ str = "(nil)";
 printf("%s", str);
 break;
 default:
-i++;
-continue;
+ i++;
+ continue;
 }
 if (format[++i])
 printf(", ");

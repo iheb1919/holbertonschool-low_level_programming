@@ -21,7 +21,7 @@ return (1);
 }
 for (i = 0; text_content[i] != '\0'; i++)
 ;
-buf = malloc(i *sizeof(char));
+buf = malloc(i * sizeof(char));
 if (buf == NULL)
 return (-1);
 fo = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);

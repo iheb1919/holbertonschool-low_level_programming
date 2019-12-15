@@ -2,8 +2,8 @@
 /**
  * insert_dnodeint_at_index - insert a node
  * @h: pointer
- * @ind: int
- * @i: int
+ * @idx: int
+ * @n: int
  * Return: 1 or 0
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)

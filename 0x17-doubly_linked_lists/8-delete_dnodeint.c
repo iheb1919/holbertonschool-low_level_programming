@@ -25,5 +25,5 @@ return (1);
 i++;
 new = new->next;
 }
-return (-1);;
+return (-1);
 }

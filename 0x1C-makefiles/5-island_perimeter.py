@@ -9,10 +9,10 @@ def island_perimeter(grid):
             if grid[i][j] == 1:
                 if grid[i][j-1] == 0 or j - 1 < 0:
                     per += 1
-                if grid[i][j+1] == 0 or j + 1 > len(grid):
+                if j + 1 > len(grid[i])-1 or grid[i][j+1] == 0:
                     per += 1
                 if grid[i-1][j] == 0 or i - 1 < 0:
                     per += 1
-                if grid[i+1][j] == 0 or i + 1 > len(grid[i]):
+                if i + 1 > len(grid) - 1 or grid[i+1][j] == 0:
                     per += 1
     return(per)
